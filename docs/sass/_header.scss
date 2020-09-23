@@ -1,0 +1,71 @@
+/*Cabecera*/
+
+header{
+    margin: 0 auto;
+    background-color: $color-principal;
+    border-bottom: $color-secundario 10px solid;
+
+    .contenedor-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            h1{
+                &:hover{
+                    color: $color-fondo;
+                }        
+            }
+        }
+        
+        nav{
+
+            ul{
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    padding: 8px;
+                    transition: all 0.5s;
+                    
+                    &:hover{
+                        background:#943525;
+                        transform: scale(1.3, 1.3);
+                    }
+
+                    a{
+                        font-family: $fuente-titulos;
+                        padding: 10px;
+                        color: $color-secundario;
+        
+                        &:hover{
+                            color: $color-fondo;
+                        }
+                    }
+        
+                    i{
+                        list-style: none;
+                        display: inline-block;
+                        padding: 8px;
+                        transition: all 0.5s;
+        
+                        &:hover{
+                            transform: scale(1.3, 1.3);
+                        }
+        
+                    }
+
+                    /*Borra el menú en teléfonos*/
+                    /* @media screen and (max-width: $telefonos) {
+                        display: none;
+                    } */
+                }
+            }
+        }
+    }
+}
+
+/*Navegación y listas*/
+
+.abrir, .cerrar{
+    display: none;
+}

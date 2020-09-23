@@ -1,0 +1,36 @@
+/*Responsive  Tablet*/
+
+@media screen and (max-width: $tablets) {
+    nav {
+        ul{
+            li{
+                a{
+                    span{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .contenedor-flex{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .julian, .presentacion, .categorias{    
+        max-width: 50%;
+    }
+
+    .contenedor-categorias{
+        flex-direction: row;
+        
+        .categorias{
+            max-width: 45%;
+        }
+    }
+
+
+
+}

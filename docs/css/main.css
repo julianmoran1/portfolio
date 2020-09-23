@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*
+Pendiente
+agregar el menú responsive para telefonos
+anidar las media queries
+*/
+/* VARIABLES */
+/*Placeholders*/
+.contenedor-categorias, main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Cabecera*/
+header {
+  margin: 0 auto;
+  background-color: #A5402D;
+  border-bottom: #ffc07f 10px solid;
+}
+header .contenedor-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .contenedor-flex a h1:hover, header .contenedor-flex a h3:hover, header .contenedor-flex a h2:hover {
+  color: #eee;
+}
+header .contenedor-flex nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px;
+  transition: all 0.5s;
+  /*Borra el menú en teléfonos*/
+  /* @media screen and (max-width: $telefonos) {
+      display: none;
+  } */
+}
+header .contenedor-flex nav ul li:hover {
+  background: #943525;
+  transform: scale(1.3, 1.3);
+}
+header .contenedor-flex nav ul li a {
+  font-family: "Playfair Display", serif;
+  padding: 10px;
+  color: #ffc07f;
+}
+header .contenedor-flex nav ul li a:hover {
+  color: #eee;
+}
+header .contenedor-flex nav ul li i {
+  list-style: none;
+  display: inline-block;
+  padding: 8px;
+  transition: all 0.5s;
+}
+header .contenedor-flex nav ul li i:hover {
+  transform: scale(1.3, 1.3);
+}
+
+/*Navegación y listas*/
+.abrir, .cerrar {
+  display: none;
+}
+
+/*Secciones*/
+main {
+  /*     display: flex;
+      flex-wrap: wrap; */
+  padding: 10px 0;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.contenedor ul li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contenedor-categorias {
+  /*     display: flex;
+      flex-wrap: wrap; */
+  justify-content: center;
+  text-align: center;
+}
+.contenedor-categorias .categorias {
+  border: 1px solid #A5402D;
+  border-radius: 10px;
+  margin: 10px;
+  /* max-width: 30%; */
+  max-width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contenedor-categorias article img {
+  /* max-width: 100%; */
+  max-width: 100%;
+  margin: 0 auto;
+}
+.contenedor-categorias article a h3:hover {
+  color: #eee;
+}
+
+.quien-soy .contenedor-categorias {
+  align-items: center;
+}
+
+.julian {
+  /* max-width: 25%; */
+  max-width: 25%;
+}
+
+.presentacion {
+  /* max-width: 70%; */
+  max-width: 70%;
+}
+
+/*Pie*/
+footer {
+  background-color: #222;
+  border-top: 10px solid #555;
+  color: white;
+}
+footer ul {
+  display: flex;
+}
+footer ul li i {
+  margin: 15px;
+}
+footer ul li a i {
+  color: white;
+}
+footer ul li a i:hover {
+  color: #777;
+}
+footer nav ul li {
+  padding-top: 10px;
+  background: none;
+}
+footer nav ul li a {
+  font-family: "Playfair Display", serif;
+  padding: 10px;
+  color: white;
+}
+footer nav ul li a:hover {
+  color: #777;
+}
+
+/*PIE ABAJO - Solo en quien soy - Tomado desde CSS Tricks */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+.footer, .push {
+  height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h3, h2 {
+  color: #ffc07f;
+  text-align: center;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  padding: 10px;
+}
+
+h2 {
+  color: #A5402D;
+  padding: 10px 0;
+}
+
+h3 {
+  padding: 10px 0;
+  background: #A5402D;
+  border-radius: 8px 8px 0 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+}
+p i {
+  font-size: 25px;
+}
+
+/*FORMULARIOS*/
+fieldset, input, textarea, select {
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+}
+
+legend {
+  color: #A5402D;
+  font-weight: bold;
+}
+
+.boton {
+  background-color: #A5402D;
+  color: #ffc07f;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Responsive  Tablet*/
+@media screen and (max-width: 1024px) {
+  nav ul li a span {
+    display: none;
+  }
+
+  .contenedor-flex {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .julian, .presentacion, .categorias {
+    max-width: 50%;
+  }
+
+  .contenedor-categorias {
+    flex-direction: row;
+  }
+  .contenedor-categorias .categorias {
+    max-width: 45%;
+  }
+}
+/*Responsive  telefonos*/
+@media screen and (max-width: 760px) {
+  .contenedor-flex {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .presentacion, .categorias {
+    max-width: 100%;
+  }
+
+  .julian {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .contenedor-categorias {
+    flex-direction: column;
+  }
+  .contenedor-categorias .categorias {
+    max-width: 100%;
+  }
+
+  footer .lista {
+    display: flex;
+    flex-direction: row;
+  }
+}
