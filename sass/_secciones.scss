@@ -1,0 +1,79 @@
+/*Secciones*/
+
+@mixin ancho-porcentual ($max-width) {
+    max-width: $max-width;
+}
+
+main{
+/*     display: flex;
+    flex-wrap: wrap; */
+    @extend %flex;
+    padding: 10px 0;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    ul{
+        li{
+            list-style: none;
+            text-decoration: none;
+            display: inline-block;
+        }
+    }
+}
+
+.contenedor-categorias{
+/*     display: flex;
+    flex-wrap: wrap; */
+    @extend %flex;
+    justify-content: center;
+    text-align: center;
+
+    .categorias {
+        border: 1px solid $color-principal;
+        border-radius: 10px;
+        margin: 10px;
+        /* max-width: 30%; */
+        @include ancho-porcentual(30%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    article{
+
+        img{
+            /* max-width: 100%; */
+            @include ancho-porcentual(100%);
+            margin: 0 auto;
+        }
+
+        a{
+            h3{
+                &:hover{
+                    color: $color-fondo;
+                }
+            }
+        }
+    }
+}
+
+
+.quien-soy{
+    .contenedor-categorias{
+        align-items: center;
+    }
+}
+
+.julian{    
+    /* max-width: 25%; */
+    @include ancho-porcentual(25%);
+
+}
+
+.presentacion {
+    /* max-width: 70%; */
+    @include ancho-porcentual(70%);
+
+}
