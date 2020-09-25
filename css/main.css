@@ -228,7 +228,7 @@ legend {
 /*Responsive  Tablet*/
 @media screen and (max-width: 1024px) {
   nav ul li a span {
-    display: none;
+    /*  display: none; */
   }
 
   .contenedor-flex {
@@ -249,6 +249,10 @@ legend {
 }
 /*Responsive  telefonos*/
 @media screen and (max-width: 760px) {
+  nav {
+    text-align: center;
+  }
+
   .contenedor-flex {
     flex-direction: column;
     margin-bottom: 10px;
