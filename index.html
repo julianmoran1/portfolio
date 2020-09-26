@@ -20,7 +20,12 @@
      <!-- Animate CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
+     <!-- SLICK -->
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+     
 </head>
 
 <body>
@@ -33,7 +38,7 @@
 
                 <nav id="nav">
                     <ul>
-<!--                         <li class="animate__animated animate__backInDown"><a href="index.html"> <i class="fas fa-home"></i> 
+                        <!-- <li class="animate__animated animate__backInDown"><a href="index.html"> <i class="fas fa-home"></i> 
                             <span class="elementos-menu">Inicio </span></a></li> -->
                     
                         <li class="animate__animated animate__backInDown"><a href="quiensoy.html"> <i class="fas fa-user"></i>
@@ -53,14 +58,19 @@
 
         </div>
         </header>
+
+
+
+        <div class="slider">
+            <div><img src="images/mockup-ebse-carrusel.jpg" alt=""></div>
+            <div><img src="images/revista-carrusel.jpg" alt=""></div>
+            <div><img src="images/logo-grillito-carrusel.jpg" alt=""></div>
+        </div>
     
 <div class="contenedor separador">
-    <!-- 
-    <section class="carrusel">
-        <h4>Tira de imágenes</h4>
-        
-    </section>
-     -->
+    
+
+    
 
     <main>
         
@@ -108,18 +118,6 @@
     
         </section>
 
-        <!-- <section class="contenedor">
-            <h2>Contacto</h2>
-
-                <div class="contenedor-categorias">
-                        <form action="">
-                                <label for="nombre">Nombre </label><input type="text" id="nombre" name="nombre">
-                                <label for="email">Email </label><input type="email" id="email" name="email">
-                                <label for="comentario">Comentario</label><input type="text" id="comentario" name="comentario">
-                                <input type="submit" value="Enviar comentario">
-                        </form>
-                </div>
-        </section> -->
     </main>
     
 </div>
@@ -151,5 +149,21 @@
     new WOW().init();
     </script>
 
+
+        <!-- SLICK -->
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="js/slide.js"></script>
+
+
+        <script>
+            $(document).ready(function(){
+            $('.slider').slick({
+            setting-name: setting-value
+                });
+            });
+        </script>
 </body>
 </html>
