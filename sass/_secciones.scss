@@ -5,8 +5,10 @@
 }
 
 main{
-/*     display: flex;
-    flex-wrap: wrap; */
+    /*     
+    display: flex;
+    flex-wrap: wrap; 
+    */
     @extend %flex;
     padding: 10px 0;
 }
@@ -26,8 +28,10 @@ main{
 }
 
 .contenedor-categorias{
-/*     display: flex;
-    flex-wrap: wrap; */
+    /*     
+    display: flex;
+    flex-wrap: wrap; 
+    */
     @extend %flex;
     justify-content: center;
     text-align: center;
