@@ -1,9 +1,9 @@
 section#modal-comercio,
 section#modal-pinares,
-section#modal-grillito,
+section#modal-grillito
 {
-    display: none;
-    width: 100%;
+    display:none;
+    width:100%;
     height: 100%;
     background-color:  rgba($color: #FFF, $alpha: 0.5);
     position: fixed;
@@ -15,15 +15,31 @@ section#modal-grillito,
 
     article{
         margin-top: 5px;
-        background-color: white;
+        background-color: #ccc;
         width: 80%;
         margin: auto;
+        padding-bottom: 15px;
         
         img{
             max-height: 70vh;
             justify-content: center;
             width: auto;
             height: auto;
+        }
+
+        p{
+            text-align: center;
+        }
+        h3{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 10px;
+
+            img{
+                margin-right: 10px;
+                width: 20px;
+                height: auto;
+            }
         }
     }
 }
