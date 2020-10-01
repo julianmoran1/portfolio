@@ -6,6 +6,13 @@ fieldset, input, textarea, select{
     padding: 5px;
 }
 
+input{
+    width: 70%;
+}
+
+input#copia {
+    width: auto;
+}
 
 legend{
     color:$color-principal;
@@ -17,4 +24,5 @@ legend{
     background-color: $color-principal;
     color: $color-secundario;
     font-family: 'Roboto', sans-serif;
+    width: 70%;
 }
