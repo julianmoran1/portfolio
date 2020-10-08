@@ -315,19 +315,32 @@ legend {
   }
 
   /*Menú hamburguesa*/
-  /*  
   .abrir, .cerrar {
-      display: block;
-      display: inline-block;
-      text-align: right;
-      justify-content: right;
-      padding-top: 5px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
   }
 
-  #nav{
-       display: none;
-  } 
-  */
+  #nav {
+    display: block;
+    position: fixed;
+    top: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #A5402D;
+    z-index: 1;
+    transition: top 0.5s;
+  }
+  #nav ul {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #nav:target {
+    top: 0;
+  }
 }
 .slider {
   /* width: 1200px; */
@@ -357,7 +370,7 @@ section#modal-scanntech {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
-  z-index: 2;
+  z-index: 1;
 }
 section#modal-comercio:target,
 section#modal-pinares:target,
@@ -373,6 +386,10 @@ section#modal-grillito article,
 section#modal-comunicambadu article,
 section#modal-anuario article,
 section#modal-scanntech article {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  right: 5px;
   margin-top: 5px;
   background-color: #ccc;
   width: 80%;

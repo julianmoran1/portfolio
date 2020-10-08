@@ -3,6 +3,7 @@
 
 @media screen and (max-width: $telefonos) {
 
+
     nav{
         text-align: center;
     }
@@ -48,19 +49,36 @@
 
     /*Menú hamburguesa*/
 
-    /*  
+      
     .abrir, .cerrar {
         display: block;
-        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
         text-align: right;
-        justify-content: right;
-        padding-top: 5px;
     }
 
     #nav{
-         display: none;
+         display: block;
+         position: fixed;
+         top: -100%;
+         width: 100vw;
+         height: 100vh;
+         background-color: $color-principal;
+         z-index: 1;
+         transition: top 0.5s;
+
+         ul{
+             margin-top:30vh;
+             display: flex;
+             flex-direction: column;
+            }
+
+         &:target{
+            top: 0;
+         }
     } 
-    */
+    
 
 
 }
