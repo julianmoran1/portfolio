@@ -1,0 +1,7 @@
+El unico detalle que me hace ruido a nivel visual es el tema del footer que en varias secciones queda como flotando por la altura del contenido. Ahí tenes dos opciones, si vos sabes que el contenido nunca va a crecer, podes ponerle al footer un position fixed para que quede siempre al final de la pantalla. 
+
+Si se puede seguir agregando contenido, te conviene al main trabajarlo con un min-height y una propiedad que se llama calc. Lo probé en tu web, la propiedad a agregar sería esta --> min-height: calc(100vh - 73px - 87px); y te explico: esa propiedad va a ser un calculo para definir la altura del main, como ves el cálculo es 100vh que sería la altura total del viewport pero a eso le resta dos valores, que valores son? La altura de tu header y la altura de tu footer. Y a su vez, si te fijas lo defino como alto mínimo. Pero si el contenido de tu web crece ese main va a crecer junto con el contenido.
+
+
+
+Un pequeño detalle que creo que podría sumar para dejar la web impecable. Pero desde ya, felicitaciones por el excelente trabajo y la excelente cursada!
