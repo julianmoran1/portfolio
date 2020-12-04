@@ -25,6 +25,7 @@ header .contenedor-flex nav ul li {
   display: inline-block;
   padding: 8px;
   transition: all 0.5s;
+  /* Oculta la página de contacto*/
   /*Borra el menú en teléfonos*/
   /* @media screen and (max-width: $telefonos) {
       display: none;
@@ -33,6 +34,9 @@ header .contenedor-flex nav ul li {
 header .contenedor-flex nav ul li:hover {
   background: #943525;
   transform: scale(1.3, 1.3);
+}
+header .contenedor-flex nav ul li:nth-child(5) {
+  display: none;
 }
 header .contenedor-flex nav ul li a {
   font-family: "Playfair Display", serif;
@@ -140,6 +144,10 @@ footer ul li a i:hover {
 footer nav ul li {
   padding-top: 10px;
   background: none;
+  /*Oculta la página de contacto*/
+}
+footer nav ul li:nth-child(5) {
+  display: none;
 }
 footer nav ul li a {
   font-family: "Playfair Display", serif;

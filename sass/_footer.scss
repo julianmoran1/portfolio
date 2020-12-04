@@ -30,6 +30,10 @@ footer{
             li{
                 padding-top: 10px;
                 background: none;
+                /*Oculta la página de contacto*/
+                &:nth-child(5){
+                    display: none;
+                }
 
                 a{
                     font-family: $fuente-titulos;
