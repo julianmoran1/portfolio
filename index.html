@@ -25,18 +25,20 @@
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     
-     <!-- Animate CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
-     <!-- SLICK -->
-
+    <!-- SLICK -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <!-- // Add the new slick-theme.css if you want the default styling -->
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
      
+    <!-- SWIPER SLIDER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
 </head>
 
 <body>
@@ -74,11 +76,10 @@
         </div>
         </header>
 
-
-
-<!--    <div class="slider">
-
-            <div>
+              <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
                 <a href="web.html">
                     <picture>
                         <source media="(max-width:760px)" srcset="images/slider/mockup-ebse-carrusel760.jpg">
@@ -88,7 +89,7 @@
                 </a>
             </div>
 
-            <div>
+            <div class="swiper-slide">
                 <a href="editorial.html">
                     <picture>
                         <source media="(max-width:760px)" srcset="images/slider/revista-carrusel760.jpg">
@@ -98,7 +99,7 @@
                 </a>
             </div>
 
-            <div>
+            <div class="swiper-slide">
                 <a href="logotipos.html">
                     <picture>
                         <source media="(max-width:760px)" srcset="images/slider/logo-carols-carrusel760.jpg">
@@ -107,8 +108,13 @@
                     </picture>
                 </a>
             </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
-        </div> -->
+
     
 <div class="contenedor separador">
     
@@ -205,5 +211,18 @@
                 });
             });
         </script> -->
+
+    <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+    </script>
 </body>
 </html>
