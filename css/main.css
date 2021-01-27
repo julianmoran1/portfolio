@@ -20,6 +20,9 @@ header .contenedor-flex {
 header .contenedor-flex a h1:hover, header .contenedor-flex a h3:hover, header .contenedor-flex a h2:hover {
   color: #eee;
 }
+header .contenedor-flex nav {
+  z-index: 2;
+}
 header .contenedor-flex nav ul li {
   list-style: none;
   display: inline-block;
@@ -285,6 +288,7 @@ legend {
 @media screen and (max-width: 760px) {
   nav {
     text-align: center;
+    z-index: 100;
   }
 
   .contenedor-flex {
@@ -311,6 +315,10 @@ legend {
   footer .lista {
     display: flex;
     flex-direction: row;
+  }
+
+  .swiper-container {
+    z-index: 0;
   }
 
   /*Formularios*/
