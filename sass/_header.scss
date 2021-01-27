@@ -19,9 +19,10 @@ header{
         }
         
         nav{
-            z-index: 2;
+            z-index: 100;
 
             ul{
+                
                 li{
                     list-style: none;
                     display: inline-block;
