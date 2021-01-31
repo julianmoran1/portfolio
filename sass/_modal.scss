@@ -10,7 +10,7 @@ section#modal-scanntech
     height: 100%;
     background-color:  rgba($color: #FFF, $alpha: 0.5);
     position: fixed;
-    z-index: 1;
+    z-index: 150;
 
     &:target{
         display: block;
