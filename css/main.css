@@ -380,7 +380,8 @@ section#modal-pinares,
 section#modal-grillito,
 section#modal-comunicambadu,
 section#modal-anuario,
-section#modal-scanntech {
+section#modal-scanntech,
+section#modal-brochure {
   display: none;
   width: 100%;
   height: 100%;
@@ -393,7 +394,8 @@ section#modal-pinares:target,
 section#modal-grillito:target,
 section#modal-comunicambadu:target,
 section#modal-anuario:target,
-section#modal-scanntech:target {
+section#modal-scanntech:target,
+section#modal-brochure:target {
   display: block;
 }
 section#modal-comercio article,
@@ -401,7 +403,8 @@ section#modal-pinares article,
 section#modal-grillito article,
 section#modal-comunicambadu article,
 section#modal-anuario article,
-section#modal-scanntech article {
+section#modal-scanntech article,
+section#modal-brochure article {
   position: absolute;
   top: 20px;
   left: 5px;
@@ -417,7 +420,8 @@ section#modal-pinares article img,
 section#modal-grillito article img,
 section#modal-comunicambadu article img,
 section#modal-anuario article img,
-section#modal-scanntech article img {
+section#modal-scanntech article img,
+section#modal-brochure article img {
   max-height: 70vh;
   justify-content: center;
   width: auto;
@@ -428,7 +432,8 @@ section#modal-pinares article p,
 section#modal-grillito article p,
 section#modal-comunicambadu article p,
 section#modal-anuario article p,
-section#modal-scanntech article p {
+section#modal-scanntech article p,
+section#modal-brochure article p {
   text-align: center;
 }
 section#modal-comercio article h3,
@@ -436,7 +441,8 @@ section#modal-pinares article h3,
 section#modal-grillito article h3,
 section#modal-comunicambadu article h3,
 section#modal-anuario article h3,
-section#modal-scanntech article h3 {
+section#modal-scanntech article h3,
+section#modal-brochure article h3 {
   display: flex;
   justify-content: space-between;
   padding-left: 10px;
@@ -446,7 +452,8 @@ section#modal-pinares article h3 img,
 section#modal-grillito article h3 img,
 section#modal-comunicambadu article h3 img,
 section#modal-anuario article h3 img,
-section#modal-scanntech article h3 img {
+section#modal-scanntech article h3 img,
+section#modal-brochure article h3 img {
   margin-right: 10px;
   width: 20px;
   height: auto;
